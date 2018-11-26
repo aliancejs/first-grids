@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+div {
+    box-sizing: border-box;
+}
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+.text {
+    margin-top: 45px;
+    float: left;
+}
+h1 {
+    font-family: Bebas Neue;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: Arial Regular;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin-top: 65px;
+    float: right;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 40px;
+}
+.menu a{
+    font-family: Helvetica LT CondensedLight;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.logo {
+    margin-top: 162px;
+    margin-left: 330px;
+}
+h3 {
+    font-family: Cambria;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    color: #545454;
+}
+.pen {
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+}
+.container {
+    width: 68%;
+    margin: 0 auto;
+}
+.main {
+    height: 700px;
+}
+h4 {
+    margin-top: 60px;
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 22px;
+    color: #545454;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    justify-content: center;
+
+}    
+
+@media screen and (max-width 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2fr);
+
+        grid-template-areas: "_1 _2"
+                             "_6 _9";
+                             
+    }
+}
+
+.grid-container:nth-child(1) {
+    grid-area: _1
+}
+.grid-container::nth-child(2) {
+    grid-area: _2
+}
+.grid-container:nth-child(3) {
+    grid-area: _3
+}
+.grid-container:nth-child(4) {
+    grid-area: _4
+}
+.grid-container:nth-child(5) {
+    grid-area: _5
+}
+.grid-container:nth-child(6) {
+    grid-area: _6
+}
+.grid-container:nth-child(7) {
+    grid-area: _7
+}
+.grid-container:nth-child(58) {
+    grid-area: _8
+}
+.grid-container:nth-child(9) {
+    grid-area: _9
+}
+.grid-container:nth-child(10) {
+    grid-area: _10
+}
+.grid-container:nth-child(11) {
+    grid-area: _11
+}
+.grid-container:nth-child(12) {
+    grid-area: _12
+}
+
+.first {
+    background-color: white;
+    height: 120px;
+}
+.second {
+    background-color: #d45e5e;
+    height: 200px;
+}
+.foto {
+    border: 8px solid white;
+    margin-top: 60px;
+}
